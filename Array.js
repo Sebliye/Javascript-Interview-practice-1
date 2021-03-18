@@ -53,7 +53,7 @@ return true if even and return false if odd. Example: array[3,2,9]
       }
       return count;
  }
- console.log(even([1,2,3,4]))
+ //console.log(even([1,2,3,4]))
 
  /* 
  4. Write a function swap that swaps the first and last element of the array.
@@ -95,5 +95,47 @@ return true if even and return false if odd. Example: array[3,2,9]
        arr.splice(1,1);
        return arr;
  };
- console.log(removeSecond([1,2,3]))
+ //console.log(removeSecond([1,2,3]))
+
+ /////remove duplicate from array
+ let arr=[1,2,3,3,2];//[1,2,3];
+
+ function removeDuplicate(arr){
+      let x=[];
+
+      for(let elem of arr){
+           if(!x.includes(elem)){
+                x.push(elem);
+           }
+      }
+      return x;
+ }
+ //console.log(removeDuplicate([1,2,3,3,2]))
+
+
+function removedup(arr){
+     let x=[]//n
+     for(let elem of arr){//n
+          if(x.indexOf(elem)==-1){//n
+               x.push(elem)//n
+          }
+     }
+     return x;
+}
+//console.log(removedup([1,2,4,4,2]))
+
+//palindrome
+
+function palindrome(str){
+     let rev=str.split('').reverse().join('');
+     console.log(rev);
+     console.log(str);
+     if(str===rev){
+          return 'palindrome'
+     }
+     return 'not palindorme'
+}
+console.log(palindrome('mam'))
+
+//array sort 
 
