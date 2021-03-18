@@ -1,0 +1,23 @@
+{
+  "name": "javascript-interview-practice-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Array.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebliye/Javascript-Interview-practice-1.git"
+  },
+  "author": "Seble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebliye/Javascript-Interview-practice-1/issues"
+  },
+  "homepage": "https://github.com/Sebliye/Javascript-Interview-practice-1#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2"
+  }
+}
