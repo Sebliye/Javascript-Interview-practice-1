@@ -3,7 +3,6 @@ const assert =require('assert');
 const {expect}=require('chai');
 
 
-
 describe('test fibonacci',()=>{
      it('number ',()=>{
           let result=fibonacci(5);
@@ -25,5 +24,4 @@ describe('test fibonacci',()=>{
      it('test if num is not anumber',()=>{
            expect(fibonacci('seb')).to.deep.equal(NaN);
      })
-
 })
