@@ -6,4 +6,5 @@ function sortNum(arr){
 }
 console.log(sortNum([2,7,9,1,0]));
 
+//complexity O(N)
 module.exports=sortNum;
