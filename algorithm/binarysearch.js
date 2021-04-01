@@ -18,3 +18,24 @@ function BinarySearch(arr,val){
      return -1;
 }
 console.log(BinarySearch([2,20,1,3,6],20));
+
+
+function Binaryser(arr,val){
+     let sortedarr=arr.sort((a,b)=>a-b);
+     //console.log(sortedarr)
+     let left=0;//0
+     let right=sortedarr.length-1;//3
+     for(let i=0;i<sortedarr.length-1;i++){
+          let middle=Math.floor((left+right)/2)//1
+          console.log(middle)
+          if(val===sortedarr[middle]){//3===1 f
+               return middle +"elem" +sortedarr[middle]
+          }else if(val>sortedarr[middle]){ //3>1 l=1+2 3===3 
+               left=middle+1
+          }else{
+               right=middle-1
+          }
+     }
+     return -1;
+}
+console.log(Binaryser([1,10,3,0],3));//[0,1,3,10]

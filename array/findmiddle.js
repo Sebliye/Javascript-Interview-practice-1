@@ -13,7 +13,6 @@
  }
  console.log(getMiddle([10, 20, 30,40]));
 
-
  const findmiddle=(arr)=>{
       
      if(arr.length%2===0){
